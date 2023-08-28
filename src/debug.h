@@ -1,5 +1,5 @@
-#ifndef HCLANG_DEBUG_H
-#define HCLANG_DEBUG_H
+#ifndef HCLAN_DEBUG_H
+#define HCLAN_DEBUG_H
 
 #include "chunk.h"
 

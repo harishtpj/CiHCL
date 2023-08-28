@@ -1,5 +1,5 @@
-#ifndef HCLANG_MEMORY_H
-#define HCLANG_MEMORY_H
+#ifndef HCLAN_MEMORY_H
+#define HCLAN_MEMORY_H
 
 #include "common.h"
 

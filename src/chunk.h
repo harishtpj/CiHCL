@@ -1,5 +1,5 @@
-#ifndef HCLANG_CHUNK_H
-#define HCLANG_CHUNK_H
+#ifndef HCLAN_CHUNK_H
+#define HCLAN_CHUNK_H
 
 #include "common.h"
 #include "value.h"
@@ -7,6 +7,11 @@
 typedef enum {
     OP_CONST,
     OP_RET,
+    OP_NEGATE,
+    OP_ADD,
+    OP_SUB,
+    OP_MUL,
+    OP_DIV,
 } OpCode;
 
 typedef struct {
