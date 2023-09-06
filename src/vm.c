@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 #include "common.h"
 #include "compiler.h"
@@ -63,8 +64,15 @@ static InterpretResult run() {
             printf("\n");
             return INTERPRET_OK;
         }
+
+        case OP_MOD: {
+          double b = pop();
+          double a = pop();
+          push(fmod(a, b));
+          break;
+        }
         
-        case OP_NEGATE:   push(-pop()); break;
+        case OP_NEGATE: push(-pop()); break;
         case OP_ADD:      BINARY_OP(+); break;
         case OP_SUB: BINARY_OP(-); break;
         case OP_MUL: BINARY_OP(*); break;
